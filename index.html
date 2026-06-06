@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mourinha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="image-gradient" src="gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
+    <div class="container">
+        <header>
+            <h1 class="logo">Mourinha</h1>
+            <nav>
+                <a href="#about"    data-i18n="nav.about">About Me</a>
+                <a href="#skills"   data-i18n="nav.skills">Hard Skills</a>
+                <a href="#projects" data-i18n="nav.projects">Projects</a>
+                <a href="#socials"  data-i18n="nav.socials">Socials</a>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">☀</button>
+                <button class="lang-toggle" id="langToggle">PT</button>
+                <a class="btn-signing" href="mailto:jpsm3@cesar.school" data-i18n="nav.email">EMAIL</a>
+            </div>
+        </header>
+        <main>
+            <div class="hero-wrapper">
+                <section class="content" id="hero">
+                    <div class="tag-box">
+                        <div class="tag" data-i18n="hero.tag">INTRODUCING</div>
+                    </div>
+                    <h1 class="title">
+                        <span class="typing"></span>
+                        <span class="cursor">|</span>
+                    </h1>
+                    <p class="description" data-i18n="hero.description">
+                        Passionate about technology and Red Hot Chili Peppers.
+                    </p>
+                    <div class="buttons">
+                        <a href="#projects" class="btn-get-started" data-i18n="hero.btn1">Documents &gt;</a>
+                        <a href="#about"    class="btn-signing-main" data-i18n="hero.btn2">Get Started &gt;</a>
+                    </div>
+                </section>
+                <spline-viewer class="brain"
+                    url="https://prod.spline.design/jffFKYXNSsAtTp-B/scene.splinecode">
+                </spline-viewer>
+            </div>
+
+            <section id="about" class="page-section about-section">
+                <div class="section-inner">
+                    <div class="section-label reveal reveal-left" data-i18n="about.label">01 — About Me</div>
+                    <div class="about-grid">
+                        <div class="about-left reveal reveal-left">
+                            <h2 data-i18n-html="about.title">Computer Science student,<br><span class="accent">design dropout.</span></h2>
+                            <p data-i18n="about.p1">Hi! My name is João Pedro and I'm in my first semester studying Computer Science at Cesar School. I'm transitioning from a Design degree and right now my goal is to explore different areas, but so far I've been most drawn to Cybersecurity and fields related to Artificial Intelligence.</p>
+                            <p data-i18n="about.p2"></p>
+                        </div>
+                        <div class="about-right reveal-stagger">
+                            <div class="about-stat">
+                                <span class="stat-number">1°</span>
+                                <span class="stat-label" data-i18n="about.stat1">Semester of college</span>
+                            </div>
+                            <div class="about-stat">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label" data-i18n="about.stat2">Technologies learned</span>
+                            </div>
+                            <div class="about-stat">
+                                <span class="stat-number">∞</span>
+                                <span class="stat-label" data-i18n="about.stat3">Curiosity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="page-section skills-section">
+                <div class="section-inner">
+                    <div class="section-label reveal reveal-left" data-i18n="skills.label">02 — Hard Skills</div>
+                    <h2 class="reveal" data-i18n="skills.title">Tech Stack</h2>
+                    <div class="skills-grid reveal-stagger">
+                        <div class="skill-card">
+                            <div class="skill-icon">✳</div>
+                            <h3>Python</h3>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">✳</div>
+                            <h3>HTML &amp; CSS</h3>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">✳</div>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">✳</div>
+                            <h3 data-i18n="skills.cyber.title">Cybersecurity</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="page-section projects-section">
+                <div class="section-inner">
+                    <div class="section-label reveal reveal-left" data-i18n="projects.label">03 — Projects</div>
+                    <h2 class="reveal" data-i18n="projects.title">Selected Work</h2>
+                    <div class="projects-list">
+                        <div class="project-item">
+                            <div class="project-number">01</div>
+                            <div class="project-info">
+                                <h3 data-i18n="projects.p1.title">Simom Silly Adventure</h3>
+                                <p data-i18n="projects.p1.desc">A short narrative game built with Bitsy — a tiny editor for tiny worlds. Pixel art, dialogue and heart.</p>
+                            </div>
+                            <div class="project-tags">
+                                <span>Bitsy</span><span>Game Dev</span><span>Pixel Art</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/felipeassiss/HyroxPlanner" target="_blank" class="project-item project-link">
+                            <div class="project-number">02</div>
+                            <div class="project-info">
+                                <h3 data-i18n="projects.p2.title">HyroxPlanner</h3>
+                                <p data-i18n="projects.p2.desc">CLI system in Python for managing HYROX training and competitions — with CRUD, countdown to events and an AI agent powered by Groq.</p>
+                            </div>
+                            <div class="project-tags">
+                                <span>Python</span><span>CLI</span><span>Groq AI</span>
+                            </div>
+                        </a>
+                        <div class="project-item">
+                            <div class="project-number">03</div>
+                            <div class="project-info">
+                                <h3 data-i18n="projects.p3.title">This Portfolio</h3>
+                                <p data-i18n="projects.p3.desc">Personal portfolio built from scratch with HTML, CSS and vanilla JavaScript — featuring animations, i18n and a Spline 3D scene.</p>
+                            </div>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="socials" class="page-section socials-section">
+                <div class="section-inner">
+                    <div class="section-label reveal reveal-left" data-i18n="socials.label">04 — Socials</div>
+                    <h2 class="reveal" data-i18n="socials.title">Let's connect.</h2>
+                    <p class="socials-sub reveal" data-i18n="socials.sub">Find me across the web or drop me a message.</p>
+                    <div class="socials-grid">
+                        <a href="https://github.com/MourinhaJP" target="_blank" class="social-card">
+                            <span class="social-icon">✳</span>
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>@MourinhaJP</p>
+                            </div>
+                            <span class="social-arrow">→</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-silva-de-moura-526763263/" target="_blank" class="social-card">
+                            <span class="social-icon">✳</span>
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <p>João Pedro Silva de Moura</p>
+                            </div>
+                            <span class="social-arrow">→</span>
+                        </a>
+                        <a href="mailto:jpsm3@cesar.school" class="social-card">
+                            <span class="social-icon">✳</span>
+                            <div>
+                                <h3>Email</h3>
+                                <p>jpsm3@cesar.school</p>
+                            </div>
+                            <span class="social-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <span>© 2025 Mourinha</span>
+                <span data-i18n="footer.role">Data Engineer</span>
+            </footer>
+        </main>
+    </div>
+    <audio id="bg-music" loop>
+        <source src="RHCP.mp3" type="audio/mpeg">
+    </audio>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.97/build/spline-viewer.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
