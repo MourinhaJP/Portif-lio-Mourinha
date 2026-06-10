@@ -29,14 +29,18 @@ const translations = {
         "projects.p1.desc":  "A short narrative game built with Bitsy — a tiny editor for tiny worlds. Pixel art, dialogue and heart.",
         "projects.p2.title": "HyroxPlanner",
         "projects.p2.desc":  "CLI system in Python for managing HYROX training and competitions — with CRUD, countdown to events and an AI agent powered by Groq.",
-        "projects.p3.title": "This Portfolio",
-        "projects.p3.desc":  "Personal portfolio built from scratch with HTML, CSS and vanilla JavaScript — featuring animations, i18n and a Spline 3D scene.",
+        "projects.p3.title": "Bloom",
+        "projects.p3.desc":  "A course management system for Instituto Solidare — a social impact NGO. Built with a multidisciplinary team of CS and Design students at Cesar School.",
+        "projects.p4.title": "This Portfolio",
+        "projects.p4.desc":  "Personal portfolio built from scratch with HTML, CSS and vanilla JavaScript — featuring animations, i18n and a Spline 3D scene.",
 
         "socials.label":    "04 — Socials",
         "socials.title":    "Let's connect.",
         "socials.sub":      "Find me across the web or drop me a message.",
 
         "footer.role":      "Data Engineer",
+        "footer.cv_en":     "Download CV — EN",
+        "footer.cv_pt":     "Download CV — PT",
     },
     pt: {
         "nav.about":        "Sobre Mim",
@@ -68,14 +72,18 @@ const translations = {
         "projects.p1.desc":  "Um jogo narrativo curto feito com Bitsy — um editor minúsculo para mundos minúsculos. Pixel art, diálogo e coração.",
         "projects.p2.title": "HyroxPlanner",
         "projects.p2.desc":  "Sistema CLI em Python para gerenciar treinos e competições HYROX — com CRUD, contagem regressiva para eventos e agente de IA com Groq.",
-        "projects.p3.title": "Este Portfólio",
-        "projects.p3.desc":  "Portfólio pessoal construído do zero com HTML, CSS e JavaScript puro — com animações, i18n e uma cena 3D no Spline.",
+        "projects.p3.title": "Bloom",
+        "projects.p3.desc":  "Sistema de gestão de cursos para o Instituto Solidare — uma ONG de impacto social. Desenvolvido em equipe multidisciplinar de alunos de CC e Design da Cesar School.",
+        "projects.p4.title": "Este Portfólio",
+        "projects.p4.desc":  "Portfólio pessoal construído do zero com HTML, CSS e JavaScript puro — com animações, i18n e uma cena 3D no Spline.",
 
         "socials.label":    "04 — Redes Sociais",
         "socials.title":    "Vamos nos conectar.",
         "socials.sub":      "Me encontre na web ou manda uma mensagem.",
 
         "footer.role":      "Engenheiro de Dados",
+        "footer.cv_en":     "Baixar CV — EN",
+        "footer.cv_pt":     "Baixar CV — PT",
     }
 };
 

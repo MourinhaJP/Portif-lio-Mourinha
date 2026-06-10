@@ -574,10 +574,51 @@ main {
     padding: 2rem 10%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     font-size: 0.8rem;
     color: #555;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+
+.footer-cv {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.cv-btn {
+    text-decoration: none;
+    color: #d4d4d4;
+    border: 1px solid #444;
+    padding: 0.6rem 1.4rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    transition: color 0.2s, border-color 0.2s, background 0.2s, box-shadow 0.2s;
+    background: #111;
+}
+
+.cv-btn:first-child {
+    background: #e0e0e0;
+    color: #080808;
+    border-color: #e0e0e0;
+}
+
+.cv-btn:first-child:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 20px rgba(255,255,255,0.15);
+}
+
+.cv-btn:last-child:hover {
+    color: #f0f0f0;
+    border-color: #888;
+    background: #1a1a1a;
+    box-shadow: 0 0 20px rgba(255,255,255,0.05);
 }
 
 section,
