@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Mourinha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <img class="image-gradient" src="gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
+    <div class="container">
+        <header>
+            <a href="index.html"><h1 class="logo">Mourinha</h1></a>
+            <nav>
+                <a href="index.html#about"    data-i18n="nav.about">About Me</a>
+                <a href="index.html#skills"   data-i18n="nav.skills">Hard Skills</a>
+                <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+                <a href="index.html#socials"  data-i18n="nav.socials">Socials</a>
+                <a href="interests.html" data-i18n="nav.interests">Interests</a>
+                <a href="teachers.html" class="active" data-i18n="nav.teachers">Teachers</a>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">☀</button>
+                <button class="lang-toggle" id="langToggle">PT</button>
+                <a class="btn-signing" href="mailto:jpsm3@cesar.school">EMAIL</a>
+            </div>
+        </header>
+
+        <main class="subpage-main">
+            <section class="subpage-hero reveal">
+                <div class="section-label" data-i18n="teachers.label">Inspiring Teachers</div>
+                <h1 data-i18n="teachers.title">People who shaped my path.</h1>
+                <p data-i18n="teachers.subtitle">Professors at Cesar School whose classes left a mark on how I think and build.</p>
+            </section>
+
+            <section class="teachers-section">
+                <div class="section-inner">
+                    <div class="teachers-list">
+
+                        <article class="teacher-card reveal">
+                            <div class="teacher-number">01</div>
+                            <div class="teacher-body">
+                                <h2>Erick Simões</h2>
+                                <div class="teacher-subject" data-i18n="teachers.t1.subject">Introduction to Computing</div>
+                                <p data-i18n="teachers.t1.desc">The first class that showed me what Computer Science actually is. Erick has a way of making abstract concepts click. I first had him in Design for Digital Systems, and I was genuinely thrilled to find out I'd have him again in Computer Science. His approach to the history and foundations of computing gave me the context I needed to understand where everything else fits.</p>
+                            </div>
+                        </article>
+
+                        <article class="teacher-card reveal">
+                            <div class="teacher-number">02</div>
+                            <div class="teacher-body">
+                                <h2>Ana Carolina Cândido</h2>
+                                <div class="teacher-subject" data-i18n="teachers.t2.subject">Fundamentals of Programming</div>
+                                <p data-i18n="teachers.t2.desc">The class where Python started making sense. Ana Carolina's patient, structured teaching helped me build a real foundation in programming logic the kind that transfers to any language or problem you face later.</p>
+                            </div>
+                        </article>
+
+                        <article class="teacher-card reveal">
+                            <div class="teacher-number">03</div>
+                            <div class="teacher-body">
+                                <h2>Felipe Fernando</h2>
+                                <div class="teacher-subject" data-i18n="teachers.t3.subject">Mathematics for Computing / Calculus 1</div>
+                                <p data-i18n="teachers.t3.desc">Math for CS hit different when Felipe connected every concept to real applications in technology. He made me appreciate the mathematical backbone behind the things I want to build from algorithms to machine learning models.</p>
+                            </div>
+                        </article>
+
+                        <article class="teacher-card reveal">
+                            <div class="teacher-number">04</div>
+                            <div class="teacher-body">
+                                <h2>Christiano Mascaro</h2>
+                                <div class="teacher-subject" data-i18n="teachers.t4.subject">Editorial Design</div>
+                                <p data-i18n="teachers.t4.desc">From my time in Design, Christiano's class completely changed how I see layout, typography and visual hierarchy. That sensibility now lives in every interface I build including this portfolio. Design isn't decoration; it's structure.</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <span>© 2025 Mourinha</span>
+                <div class="footer-cv">
+                    <a href="Curriculo_em_ingles.pdf" download class="cv-btn" data-i18n="footer.cv_en">Download CV EN</a>
+                    <a href="Curriculo_em_portugues.pdf" download class="cv-btn" data-i18n="footer.cv_pt">Download CV PT</a>
+                </div>
+                <span data-i18n="footer.role">Data Engineer</span>
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

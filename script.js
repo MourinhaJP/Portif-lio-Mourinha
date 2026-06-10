@@ -5,13 +5,15 @@ const translations = {
         "nav.projects":     "Projects",
         "nav.socials":      "Socials",
         "nav.email":        "EMAIL",
+        "nav.interests":    "Interests",
+        "nav.teachers":     "Teachers",
 
         "hero.tag":         "INTRODUCING",
         "hero.description": "Passionate about technology and Red Hot Chili Peppers.",
         "hero.btn1":        "Documents >",
         "hero.btn2":        "Get Started >",
 
-        "about.label":      "01 — About Me",
+        "about.label":      "01 About Me",
         "about.title":      "Computer Science student,<br><span class='accent'>design dropout.</span>",
         "about.p1":         "Hi! My name is João Pedro and I'm in my first semester studying Computer Science at Cesar School. I'm transitioning from a Design degree and right now my goal is to explore different areas, but so far I've been most drawn to Cybersecurity and fields related to Artificial Intelligence.",
         "about.p2":         "",
@@ -19,28 +21,52 @@ const translations = {
         "about.stat2":      "Technologies learned",
         "about.stat3":      "Curiosity",
 
-        "skills.label":     "02 — Hard Skills",
+        "skills.label":     "02 Hard Skills",
         "skills.title":     "Tech Stack",
         "skills.cyber.title": "Cybersecurity",
 
-        "projects.label":   "03 — Projects",
+        "projects.label":   "03 Projects",
         "projects.title":   "Selected Work",
         "projects.p1.title": "Simom Silly Adventure",
-        "projects.p1.desc":  "A short narrative game built with Bitsy — a tiny editor for tiny worlds. Pixel art, dialogue and heart.",
+        "projects.p1.desc":  "A short narrative game built with Bitsy a tiny editor for tiny worlds. Pixel art, dialogue and heart.",
         "projects.p2.title": "HyroxPlanner",
-        "projects.p2.desc":  "CLI system in Python for managing HYROX training and competitions — with CRUD, countdown to events and an AI agent powered by Groq.",
+        "projects.p2.desc":  "CLI system in Python for managing HYROX training and competitions with CRUD, countdown to events and an AI agent powered by Groq.",
         "projects.p3.title": "Bloom",
-        "projects.p3.desc":  "A course management system for Instituto Solidare — a social impact NGO. Built with a multidisciplinary team of CS and Design students at Cesar School.",
+        "projects.p3.desc":  "A course management system for Instituto Solidare a social impact NGO. Built with a multidisciplinary team of CS and Design students at Cesar School.",
         "projects.p4.title": "This Portfolio",
-        "projects.p4.desc":  "Personal portfolio built from scratch with HTML, CSS and vanilla JavaScript — featuring animations, i18n and a Spline 3D scene.",
+        "projects.p4.desc":  "Personal portfolio built from scratch with HTML, CSS and vanilla JavaScript featuring animations, i18n and a Spline 3D scene.",
 
-        "socials.label":    "04 — Socials",
+        "socials.label":    "04 Socials",
         "socials.title":    "Let's connect.",
         "socials.sub":      "Find me across the web or drop me a message.",
 
         "footer.role":      "Data Engineer",
-        "footer.cv_en":     "Download CV — EN",
-        "footer.cv_pt":     "Download CV — PT",
+        "footer.cv_en":     "Download CV EN",
+        "footer.cv_pt":     "Download CV PT",
+
+        "interests.label":  "Areas of Interest",
+        "interests.title":  "What drives me.",
+        "interests.subtitle": "The fields I'm most curious about and actively exploring.",
+        "interests.cyber.title": "Cybersecurity",
+        "interests.cyber.desc":  "My biggest passion right now. I've been learning on my own through CTF challenges, studying Linux security, networks and vulnerability analysis. The adversarial nature of the field fascinates me it's a constant game of attack and defense.",
+        "interests.ai.title": "Artificial Intelligence",
+        "interests.ai.desc":  "AI is reshaping every field I care about from security to data. I'm interested in understanding how models work, how they can be applied to real problems, and where they're heading. Already used AI tools like Groq in personal projects.",
+        "interests.data.title": "Data Engineering",
+        "interests.data.desc":  "The long-term goal. I want to build the infrastructure that makes data useful pipelines, warehouses, orchestration. The intersection of engineering rigor and real business impact is what draws me to this field.",
+        "interests.design.title": "Design & Technology",
+        "interests.design.desc":  "Coming from a Design background, I bring a visual sensibility to everything I build. I care about how interfaces feel, how information is structured and how aesthetics and function can coexist this portfolio is proof of that.",
+
+        "teachers.label":   "Inspiring Teachers",
+        "teachers.title":   "People who shaped my path.",
+        "teachers.subtitle": "Professors at Cesar School whose classes left a mark on how I think and build.",
+        "teachers.t1.subject": "Introduction to Computing",
+        "teachers.t1.desc":    "The first class that showed me what Computer Science actually is. Erick has a way of making abstract concepts click. I first had him in Design for Digital Systems, and I was genuinely thrilled to find out I'd have him again in Computer Science. His approach to the history and foundations of computing gave me the context I needed to understand where everything else fits.",
+        "teachers.t2.subject": "Fundamentals of Programming",
+        "teachers.t2.desc":    "The class where Python started making sense. Ana Carolina's patient, structured teaching helped me build a real foundation in programming logic the kind that transfers to any language or problem you face later.",
+        "teachers.t3.subject": "Mathematics for Computing / Calculus 1",
+        "teachers.t3.desc":    "Math for CS hit different when Felipe connected every concept to real applications in technology. He made me appreciate the mathematical backbone behind the things I want to build from algorithms to machine learning models.",
+        "teachers.t4.subject": "Editorial Design",
+        "teachers.t4.desc":    "From my time in Design, Christiano's class completely changed how I see layout, typography and visual hierarchy. That sensibility now lives in every interface I build including this portfolio. Design isn't decoration; it's structure.",
     },
     pt: {
         "nav.about":        "Sobre Mim",
@@ -48,13 +74,15 @@ const translations = {
         "nav.projects":     "Projetos",
         "nav.socials":      "Redes Sociais",
         "nav.email":        "EMAIL",
+        "nav.interests":    "Interesses",
+        "nav.teachers":     "Professores",
 
         "hero.tag":         "APRESENTANDO",
         "hero.description": "Apaixonado por tecnologia e Red Hot Chili Peppers.",
         "hero.btn1":        "Documentos >",
         "hero.btn2":        "Começar >",
 
-        "about.label":      "01 — Sobre Mim",
+        "about.label":      "01 Sobre Mim",
         "about.title":      "Estudante de Ciências da Computação,<br><span class='accent'>ex-estudante de Design.</span>",
         "about.p1":         "Prazer! Me chamo João Pedro e estou no primeiro período do curso de Ciências da Computação na faculdade Cesar School. Estou migrando do curso de Design e no momento meu objetivo é conhecer melhor diferentes áreas, mas até o momento estou mais interessado em Segurança Cibernética e áreas relacionadas à Inteligência Artificial.",
         "about.p2":         "",
@@ -62,28 +90,52 @@ const translations = {
         "about.stat2":      "Tecnologias aprendidas",
         "about.stat3":      "Curiosidade",
 
-        "skills.label":     "02 — Habilidades",
+        "skills.label":     "02 Habilidades",
         "skills.title":     "Tecnologias",
         "skills.cyber.title": "Segurança Cibernética",
 
-        "projects.label":   "03 — Projetos",
+        "projects.label":   "03 Projetos",
         "projects.title":   "Trabalhos Selecionados",
         "projects.p1.title": "Simom Silly Adventure",
-        "projects.p1.desc":  "Um jogo narrativo curto feito com Bitsy — um editor minúsculo para mundos minúsculos. Pixel art, diálogo e coração.",
+        "projects.p1.desc":  "Um jogo narrativo curto feito com Bitsy um editor minúsculo para mundos minúsculos. Pixel art, diálogo e coração.",
         "projects.p2.title": "HyroxPlanner",
-        "projects.p2.desc":  "Sistema CLI em Python para gerenciar treinos e competições HYROX — com CRUD, contagem regressiva para eventos e agente de IA com Groq.",
+        "projects.p2.desc":  "Sistema CLI em Python para gerenciar treinos e competições HYROX com CRUD, contagem regressiva para eventos e agente de IA com Groq.",
         "projects.p3.title": "Bloom",
-        "projects.p3.desc":  "Sistema de gestão de cursos para o Instituto Solidare — uma ONG de impacto social. Desenvolvido em equipe multidisciplinar de alunos de CC e Design da Cesar School.",
+        "projects.p3.desc":  "Sistema de gestão de cursos para o Instituto Solidare uma ONG de impacto social. Desenvolvido em equipe multidisciplinar de alunos de CC e Design da Cesar School.",
         "projects.p4.title": "Este Portfólio",
-        "projects.p4.desc":  "Portfólio pessoal construído do zero com HTML, CSS e JavaScript puro — com animações, i18n e uma cena 3D no Spline.",
+        "projects.p4.desc":  "Portfólio pessoal construído do zero com HTML, CSS e JavaScript puro com animações, i18n e uma cena 3D no Spline.",
 
-        "socials.label":    "04 — Redes Sociais",
+        "socials.label":    "04 Redes Sociais",
         "socials.title":    "Vamos nos conectar.",
         "socials.sub":      "Me encontre na web ou manda uma mensagem.",
 
         "footer.role":      "Engenheiro de Dados",
-        "footer.cv_en":     "Baixar CV — EN",
-        "footer.cv_pt":     "Baixar CV — PT",
+        "footer.cv_en":     "Baixar CV EN",
+        "footer.cv_pt":     "Baixar CV PT",
+
+        "interests.label":  "Áreas de Interesse",
+        "interests.title":  "O que me move.",
+        "interests.subtitle": "Os campos que mais me intrigam e que estou explorando ativamente.",
+        "interests.cyber.title": "Cibersegurança",
+        "interests.cyber.desc":  "Minha maior paixão no momento. Venho aprendendo por conta própria através de desafios CTF, estudando segurança Linux, redes e análise de vulnerabilidades. A natureza adversarial da área me fascina é um jogo constante de ataque e defesa.",
+        "interests.ai.title": "Inteligência Artificial",
+        "interests.ai.desc":  "A IA está reformulando todas as áreas que me interessam de segurança a dados. Quero entender como os modelos funcionam, como podem ser aplicados a problemas reais e para onde estão indo. Já usei ferramentas de IA como Groq em projetos pessoais.",
+        "interests.data.title": "Engenharia de Dados",
+        "interests.data.desc":  "O objetivo de longo prazo. Quero construir a infraestrutura que torna os dados úteis pipelines, warehouses, orquestração. A interseção entre rigor de engenharia e impacto real nos negócios é o que me atrai nessa área.",
+        "interests.design.title": "Design e Tecnologia",
+        "interests.design.desc":  "Vindo de uma formação em Design, trago uma sensibilidade visual para tudo que construo. Me importo com como as interfaces se comportam, como a informação é estruturada e como estética e função podem coexistir este portfólio é prova disso.",
+
+        "teachers.label":   "Professores Inspiradores",
+        "teachers.title":   "Pessoas que moldaram meu caminho.",
+        "teachers.subtitle": "Professores da Cesar School cujas aulas marcaram a forma como penso e construo.",
+        "teachers.t1.subject": "Introdução à Computação",
+        "teachers.t1.desc":    "A primeira aula que me mostrou o que é Ciência da Computação de verdade. Erick tem uma forma de fazer conceitos abstratos fazerem sentido. Tive ele no Design na cadeira de Sistemas Digitais e fiquei muito feliz quando descobri que teria aula com ele de novo em Ciências da Computação. Sua abordagem sobre a história e os fundamentos da computação me deu o contexto que precisava para entender onde tudo se encaixa.",
+        "teachers.t2.subject": "Fundamentos de Programação",
+        "teachers.t2.desc":    "A aula onde Python começou a fazer sentido. O ensino paciente e estruturado da Ana Carolina me ajudou a construir uma base sólida em lógica de programação o tipo que se transfere para qualquer linguagem ou problema que você enfrenta depois.",
+        "teachers.t3.subject": "Matemática para Computação / Cálculo 1",
+        "teachers.t3.desc":    "Matemática para CC ficou diferente quando Felipe conectou cada conceito a aplicações reais em tecnologia. Ele me fez apreciar a espinha dorsal matemática por trás das coisas que quero construir de algoritmos a modelos de machine learning.",
+        "teachers.t4.subject": "Design Editorial",
+        "teachers.t4.desc":    "Da minha época no Design, a aula do Christiano mudou completamente como vejo layout, tipografia e hierarquia visual. Essa sensibilidade agora vive em cada interface que construo incluindo este portfólio. Design não é decoração; é estrutura.",
     }
 };
 
@@ -123,6 +175,7 @@ let typeIndex = 0;
 let typeTimeout = null;
 
 function startTyping(lang) {
+    if (!typing) return;
     clearTimeout(typeTimeout);
     typeIndex = 0;
     typing.textContent = "";
@@ -202,9 +255,14 @@ const sections = [...document.querySelectorAll("section[id]")];
 
 links.forEach(link => {
     link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute("href"));
-        if (target) target.scrollIntoView({ behavior: "smooth" });
+        const href = link.getAttribute("href");
+        if (href && href.startsWith("#")) {
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: "smooth" });
+            }
+        }
     });
 });
 
@@ -279,24 +337,27 @@ function animate() {
 animate();
 
 const music = document.getElementById("bg-music");
-music.volume = 0.3;
 
-const musicBtn = document.createElement("button");
-musicBtn.textContent = "♪";
-musicBtn.classList.add("music-btn");
-document.body.appendChild(musicBtn);
+if (music) {
+    music.volume = 0.3;
 
-let playing = false;
-musicBtn.addEventListener("click", () => {
-    if (playing) {
-        music.pause();
-        musicBtn.textContent = "♪";
-    } else {
-        music.play();
-        musicBtn.textContent = "♬";
-    }
-    playing = !playing;
-});
+    const musicBtn = document.createElement("button");
+    musicBtn.textContent = "♪";
+    musicBtn.classList.add("music-btn");
+    document.body.appendChild(musicBtn);
+
+    let playing = false;
+    musicBtn.addEventListener("click", () => {
+        if (playing) {
+            music.pause();
+            musicBtn.textContent = "♪";
+        } else {
+            music.play();
+            musicBtn.textContent = "♬";
+        }
+        playing = !playing;
+    });
+}
 
 const themeToggle = document.getElementById("themeToggle");
 let lightMode = false;
@@ -310,10 +371,11 @@ themeToggle.addEventListener("click", () => {
 if (window.innerWidth <= 768) {
     document.querySelectorAll("nav a").forEach(link => {
         link.addEventListener("click", () => {
-            window.scrollTo({
-                top: document.querySelector(link.getAttribute("href")).offsetTop,
-                behavior: "smooth"
-            });
+            const href = link.getAttribute("href");
+            if (href && href.startsWith("#")) {
+                const target = document.querySelector(href);
+                if (target) window.scrollTo({ top: target.offsetTop, behavior: "smooth" });
+            }
         });
     });
 }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interests Mourinha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <img class="image-gradient" src="gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
+    <div class="container">
+        <header>
+            <a href="index.html"><h1 class="logo">Mourinha</h1></a>
+            <nav>
+                <a href="index.html#about"    data-i18n="nav.about">About Me</a>
+                <a href="index.html#skills"   data-i18n="nav.skills">Hard Skills</a>
+                <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+                <a href="index.html#socials"  data-i18n="nav.socials">Socials</a>
+                <a href="interests.html" class="active" data-i18n="nav.interests">Interests</a>
+                <a href="teachers.html" data-i18n="nav.teachers">Teachers</a>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">☀</button>
+                <button class="lang-toggle" id="langToggle">PT</button>
+                <a class="btn-signing" href="mailto:jpsm3@cesar.school">EMAIL</a>
+            </div>
+        </header>
+
+        <main class="subpage-main">
+            <section class="subpage-hero reveal">
+                <div class="section-label" data-i18n="interests.label">Areas of Interest</div>
+                <h1 data-i18n="interests.title">What drives me.</h1>
+                <p data-i18n="interests.subtitle">The fields I'm most curious about and actively exploring.</p>
+            </section>
+
+            <section class="interests-section">
+                <div class="section-inner">
+                    <div class="interests-grid">
+
+                        <article class="interest-card reveal">
+                            <div class="interest-number">01</div>
+                            <div class="interest-icon">⬡</div>
+                            <h2 data-i18n="interests.cyber.title">Cybersecurity</h2>
+                            <p data-i18n="interests.cyber.desc">My biggest passion right now. I've been learning on my own through CTF challenges, studying Linux security, networks and vulnerability analysis. The adversarial nature of the field fascinates me it's a constant game of attack and defense.</p>
+                            <div class="interest-tags">
+                                <span>CTF</span><span>Linux</span><span>Networking</span><span>Kali</span>
+                            </div>
+                        </article>
+
+                        <article class="interest-card reveal">
+                            <div class="interest-number">02</div>
+                            <div class="interest-icon">◎</div>
+                            <h2 data-i18n="interests.ai.title">Artificial Intelligence</h2>
+                            <p data-i18n="interests.ai.desc">AI is reshaping every field I care about from security to data. I'm interested in understanding how models work, how they can be applied to real problems, and where they're heading. Already used AI tools like Groq in personal projects.</p>
+                            <div class="interest-tags">
+                                <span>Machine Learning</span><span>Groq</span><span>LLMs</span>
+                            </div>
+                        </article>
+
+                        <article class="interest-card reveal">
+                            <div class="interest-number">03</div>
+                            <div class="interest-icon">◈</div>
+                            <h2 data-i18n="interests.data.title">Data Engineering</h2>
+                            <p data-i18n="interests.data.desc">The long-term goal. I want to build the infrastructure that makes data useful pipelines, warehouses, orchestration. The intersection of engineering rigor and real business impact is what draws me to this field.</p>
+                            <div class="interest-tags">
+                                <span>Pipelines</span><span>Python</span><span>SQL</span>
+                            </div>
+                        </article>
+
+                        <article class="interest-card reveal">
+                            <div class="interest-number">04</div>
+                            <div class="interest-icon">◇</div>
+                            <h2 data-i18n="interests.design.title">Design & Technology</h2>
+                            <p data-i18n="interests.design.desc">Coming from a Design background, I bring a visual sensibility to everything I build. I care about how interfaces feel, how information is structured and how aesthetics and function can coexist this portfolio is proof of that.</p>
+                            <div class="interest-tags">
+                                <span>UI/UX</span><span>Web</span><span>Figma</span>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <span>© 2025 Mourinha</span>
+                <div class="footer-cv">
+                    <a href="Curriculo_em_ingles.pdf" download class="cv-btn" data-i18n="footer.cv_en">Download CV EN</a>
+                    <a href="Curriculo_em_portugues.pdf" download class="cv-btn" data-i18n="footer.cv_pt">Download CV PT</a>
+                </div>
+                <span data-i18n="footer.role">Data Engineer</span>
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
