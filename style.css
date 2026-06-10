@@ -1410,11 +1410,12 @@ nav a:nth-child(4) { animation-delay: 0.65s; }
 
 .teacher-card {
     display: grid;
-    grid-template-columns: 60px 1fr;
-    gap: 3rem;
+    grid-template-columns: 60px 80px 1fr;
+    gap: 2rem;
     padding: 3rem 0;
     border-bottom: 1px solid #161616;
     transition: padding-left 0.25s ease;
+    align-items: center;
 }
 
 .teacher-card:first-child {
@@ -1423,6 +1424,35 @@ nav a:nth-child(4) { animation-delay: 0.65s; }
 
 .teacher-card:hover {
     padding-left: 1rem;
+}
+
+.teacher-photo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #222;
+    flex-shrink: 0;
+}
+
+.teacher-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.teacher-avatar {
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    letter-spacing: 0.05em;
 }
 
 .teacher-number {
@@ -1500,7 +1530,378 @@ body.light .teacher-subject {
         font-size: 2.2rem;
     }
     .teacher-card {
-        grid-template-columns: 40px 1fr;
-        gap: 1.5rem;
+        grid-template-columns: 40px 56px 1fr;
+        gap: 1rem;
+    }
+    .teacher-photo {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+
+.terminal-box {
+    margin: 1.8rem 0 2rem;
+    background: #020c02;
+    border: 1px solid #00ff4130;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 420px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    box-shadow: 0 0 30px rgba(0,255,65,0.05);
+}
+
+.terminal-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+    background: #040f04;
+    border-bottom: 1px solid #00ff4120;
+}
+
+.t-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+.t-dot-red    { background: #ff5f57; }
+.t-dot-yellow { background: #febc2e; }
+.t-dot-green  { background: #28c840; }
+
+.t-title {
+    font-size: 0.75rem;
+    color: #00ff4166;
+    margin-left: 0.5rem;
+    font-family: 'Courier New', monospace;
+}
+
+.terminal-body {
+    padding: 1rem 1.2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.t-line {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    color: #777;
+    line-height: 1.6;
+}
+
+.t-prompt { color: #00ff41; font-weight: bold; }
+.t-cmd    { color: #ccffcc; }
+.t-out    { padding-left: 1.3rem; color: #4a9a4a; }
+.t-accent { color: #00ff41; }
+.t-hacker { color: #00ff41; }
+
+.t-blink {
+    animation: blink 1s step-end infinite;
+}
+
+
+.github-card {
+    display: block;
+    text-decoration: none;
+    margin-top: 2rem;
+    background: #0e0e0e;
+    border: 1px solid #222;
+    border-radius: 14px;
+    padding: 1.4rem;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.github-card:hover {
+    border-color: #444;
+    transform: translateY(-2px);
+}
+
+.github-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-bottom: 1.2rem;
+}
+
+.github-card-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6600c5, #9b59e0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    flex-shrink: 0;
+}
+
+.github-card-name {
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.github-card-url {
+    font-size: 0.78rem;
+    color: #555;
+}
+
+.github-card-status {
+    margin-left: auto;
+    font-size: 0.72rem;
+    color: #4ade80;
+    background: rgba(74,222,128,0.08);
+    border: 1px solid rgba(74,222,128,0.2);
+    padding: 0.25rem 0.6rem;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+.github-card-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.github-stat-item {
+    background: #161616;
+    border-radius: 8px;
+    padding: 0.7rem;
+    text-align: center;
+}
+
+.github-stat-num {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #f0f0f0;
+}
+
+.github-stat-label {
+    font-size: 0.68rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.github-card-langs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.github-lang-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 0.8rem;
+}
+
+.github-lang-name {
+    color: #888;
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.github-lang-bar {
+    flex: 1;
+    height: 5px;
+    background: #1e1e1e;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.github-lang-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 1s ease;
+}
+
+.github-lang-pct {
+    color: #555;
+    font-size: 0.72rem;
+    width: 32px;
+    text-align: right;
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #0e0e0e;
+    border: 1px solid #1a1a1a;
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: border-color 0.25s, transform 0.25s;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    border-color: #333;
+    transform: translateY(-4px);
+}
+
+.project-card-img {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center top;
+    background-color: #111;
+}
+
+.project-img-hyrox {
+    background-image: url('https://mourinhajp.github.io/Portif-lio-Mourinha/hyrox-preview.png');
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-img-hyrox::after {
+    content: "HYROX PLANNER";
+    position: absolute;
+    font-family: 'Courier New', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    color: #c8ff00;
+    text-align: center;
+    padding: 1rem;
+}
+
+.project-img-bloom {
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8c99a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.project-img-bloom::after {
+    content: "🌱 Bloom";
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #3a6b35;
+}
+
+.project-img-bitsy {
+    background: linear-gradient(135deg, #0d0d1a 0%, #1a1a3e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.project-img-bitsy::after {
+    content: "◼ ◻ ◼\A◻ ◼ ◻\A◼ ◻ ◼";
+    white-space: pre;
+    font-size: 1.4rem;
+    color: #7c7cff;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.project-img-portfolio {
+    background: linear-gradient(135deg, #080808 0%, #1a0a2e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.project-img-portfolio::after {
+    content: "Mourinha";
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #9b59e0;
+    letter-spacing: 0.1em;
+}
+
+.project-card-body {
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.project-card-body h3 {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #ebebeb;
+}
+
+.project-card-body p {
+    font-size: 0.88rem;
+    color: #777;
+    line-height: 1.7;
+    flex: 1;
+}
+
+.project-card-tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.2rem;
+}
+
+.project-card-tags span {
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    color: #666;
+    border: 1px solid #242424;
+    padding: 0.2rem 0.65rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.project-card-link {
+    font-size: 0.82rem;
+    color: #9b59e0;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+body.light .terminal-box,
+body.light .github-card,
+body.light .project-card {
+    background: #f5f5f5;
+    border-color: #e0e0e0;
+}
+
+body.light .terminal-bar,
+body.light .github-stat-item {
+    background: #ebebeb;
+}
+
+body.light .t-cmd,
+body.light .github-card-name,
+body.light .project-card-body h3 {
+    color: #111;
+}
+
+body.light .github-lang-bar {
+    background: #ddd;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .terminal-box {
+        max-width: 100%;
     }
 }

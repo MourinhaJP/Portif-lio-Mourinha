@@ -39,6 +39,15 @@
                     <p class="description" data-i18n="hero.description">
                         Passionate about technology and Red Hot Chili Peppers.
                     </p>
+                    <div class="terminal-box">
+                        <div class="terminal-bar">
+                            <span class="t-dot t-dot-red"></span>
+                            <span class="t-dot t-dot-yellow"></span>
+                            <span class="t-dot t-dot-green"></span>
+                            <span class="t-title">joao@mourinha ~ </span>
+                        </div>
+                        <div class="terminal-body" id="terminalBody"></div>
+                    </div>
                     <div class="buttons">
                         <a href="#projects" class="btn-get-started" data-i18n="hero.btn1">Documents &gt;</a>
                         <a href="#about"    class="btn-signing-main" data-i18n="hero.btn2">Get Started &gt;</a>
@@ -71,6 +80,47 @@
                                 <span class="stat-number">∞</span>
                                 <span class="stat-label" data-i18n="about.stat3">Curiosity</span>
                             </div>
+                            <a href="https://github.com/MourinhaJP" target="_blank" class="github-card reveal">
+                                <div class="github-card-header">
+                                    <div class="github-card-avatar">JP</div>
+                                    <div>
+                                        <div class="github-card-name">MourinhaJP</div>
+                                        <div class="github-card-url">github.com/MourinhaJP</div>
+                                    </div>
+                                    <span class="github-card-status">● Active</span>
+                                </div>
+                                <div class="github-card-stats">
+                                    <div class="github-stat-item">
+                                        <span class="github-stat-num">4+</span>
+                                        <span class="github-stat-label" data-i18n="about.repos">Repositories</span>
+                                    </div>
+                                    <div class="github-stat-item">
+                                        <span class="github-stat-num">1°</span>
+                                        <span class="github-stat-label" data-i18n="about.semester">Semester</span>
+                                    </div>
+                                    <div class="github-stat-item">
+                                        <span class="github-stat-num">2026</span>
+                                        <span class="github-stat-label" data-i18n="about.since">Since</span>
+                                    </div>
+                                </div>
+                                <div class="github-card-langs">
+                                    <div class="github-lang-item">
+                                        <span class="github-lang-name">Python</span>
+                                        <div class="github-lang-bar"><div class="github-lang-fill" style="width:50%;background:#3572A5"></div></div>
+                                        <span class="github-lang-pct">50%</span>
+                                    </div>
+                                    <div class="github-lang-item">
+                                        <span class="github-lang-name">JavaScript</span>
+                                        <div class="github-lang-bar"><div class="github-lang-fill" style="width:25%;background:#f1e05a"></div></div>
+                                        <span class="github-lang-pct">25%</span>
+                                    </div>
+                                    <div class="github-lang-item">
+                                        <span class="github-lang-name">HTML/CSS</span>
+                                        <div class="github-lang-bar"><div class="github-lang-fill" style="width:25%;background:#e34c26"></div></div>
+                                        <span class="github-lang-pct">25%</span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -105,45 +155,48 @@
                 <div class="section-inner">
                     <div class="section-label reveal reveal-left" data-i18n="projects.label">03 Projects</div>
                     <h2 class="reveal" data-i18n="projects.title">Selected Work</h2>
-                    <div class="projects-list">
-                        <div class="project-item">
-                            <div class="project-number">01</div>
-                            <div class="project-info">
+                    <div class="projects-grid">
+                        <div class="project-card reveal">
+                            <div class="project-card-img project-img-bitsy"></div>
+                            <div class="project-card-body">
+                                <div class="project-card-tags">
+                                    <span>Bitsy</span><span>Game Dev</span><span>Pixel Art</span>
+                                </div>
                                 <h3 data-i18n="projects.p1.title">Simom Silly Adventure</h3>
                                 <p data-i18n="projects.p1.desc">A short narrative game built with Bitsy a tiny editor for tiny worlds. Pixel art, dialogue and heart.</p>
                             </div>
-                            <div class="project-tags">
-                                <span>Bitsy</span><span>Game Dev</span><span>Pixel Art</span>
-                            </div>
                         </div>
-                        <a href="https://github.com/felipeassiss/HyroxPlanner" target="_blank" class="project-item project-link">
-                            <div class="project-number">02</div>
-                            <div class="project-info">
+                        <a href="https://github.com/felipeassiss/HyroxPlanner" target="_blank" class="project-card reveal">
+                            <div class="project-card-img project-img-hyrox"></div>
+                            <div class="project-card-body">
+                                <div class="project-card-tags">
+                                    <span>Python</span><span>CLI</span><span>Groq AI</span>
+                                </div>
                                 <h3 data-i18n="projects.p2.title">HyroxPlanner</h3>
                                 <p data-i18n="projects.p2.desc">CLI system in Python for managing HYROX training and competitions with CRUD, countdown to events and an AI agent powered by Groq.</p>
-                            </div>
-                            <div class="project-tags">
-                                <span>Python</span><span>CLI</span><span>Groq AI</span>
+                                <span class="project-card-link" data-i18n="projects.view">View on GitHub →</span>
                             </div>
                         </a>
-                        <a href="https://sites.google.com/cesar.school/bloom?usp=sharing" target="_blank" class="project-item project-link">
-                            <div class="project-number">03</div>
-                            <div class="project-info">
+                        <a href="https://sites.google.com/cesar.school/bloom?usp=sharing" target="_blank" class="project-card reveal">
+                            <div class="project-card-img project-img-bloom"></div>
+                            <div class="project-card-body">
+                                <div class="project-card-tags">
+                                    <span>Team Project</span><span>Social Impact</span><span>Cesar School</span>
+                                </div>
                                 <h3 data-i18n="projects.p3.title">Bloom</h3>
                                 <p data-i18n="projects.p3.desc">A course management system for Instituto Solidare a social impact NGO. Built with a multidisciplinary team of CS and Design students at Cesar School.</p>
-                            </div>
-                            <div class="project-tags">
-                                <span>Team Project</span><span>Social Impact</span><span>Cesar School</span>
+                                <span class="project-card-link" data-i18n="projects.view_site">View Site →</span>
                             </div>
                         </a>
-                        <a href="https://github.com/MourinhaJP/Portif-lio-Mourinha" target="_blank" class="project-item project-link">
-                            <div class="project-number">04</div>
-                            <div class="project-info">
+                        <a href="https://github.com/MourinhaJP/Portif-lio-Mourinha" target="_blank" class="project-card reveal">
+                            <div class="project-card-img project-img-portfolio"></div>
+                            <div class="project-card-body">
+                                <div class="project-card-tags">
+                                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                                </div>
                                 <h3 data-i18n="projects.p4.title">This Portfolio</h3>
                                 <p data-i18n="projects.p4.desc">Personal portfolio built from scratch with HTML, CSS and vanilla JavaScript featuring animations, i18n and a Spline 3D scene.</p>
-                            </div>
-                            <div class="project-tags">
-                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                                <span class="project-card-link" data-i18n="projects.view">View on GitHub →</span>
                             </div>
                         </a>
                     </div>
