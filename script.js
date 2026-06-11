@@ -151,7 +151,7 @@ const translations = {
     }
 };
 
-let currentLang = "en";
+let currentLang = localStorage.getItem("mourinha_lang") || "en";
 
 function applyTranslations(lang) {
     const t = translations[lang];
@@ -171,9 +171,13 @@ function applyTranslations(lang) {
 
 const langToggle = document.getElementById("langToggle");
 
+langToggle.textContent = currentLang === "en" ? "PT" : "EN";
+applyTranslations(currentLang);
+
 langToggle.addEventListener("click", () => {
     currentLang = currentLang === "en" ? "pt" : "en";
     langToggle.textContent = currentLang === "en" ? "PT" : "EN";
+    localStorage.setItem("mourinha_lang", currentLang);
     applyTranslations(currentLang);
 });
 
@@ -341,7 +345,7 @@ function animate() {
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = "#ffffff";
+        ctx.fillStyle = "rgba(0, 229, 255, 0.6)";
         ctx.fill();
     }
     requestAnimationFrame(animate);
@@ -350,34 +354,132 @@ animate();
 
 const music = document.getElementById("bg-music");
 
+const spotifyPlayBtn = document.getElementById("spotifyPlayBtn");
+const spotifyBarFill = document.getElementById("spotifyBarFill");
+const spotifyEq      = document.getElementById("spotifyEq");
+
+const rhcpTracks = [
+    "Californication",
+    "Under the Bridge",
+    "Scar Tissue",
+    "Can't Stop",
+    "Otherside",
+    "By the Way",
+    "Give It Away",
+    "Soul to Squeeze"
+];
+
+let spotifyPlaying = false;
+let barProgress = 32; 
+let barInterval = null;
+
+function setSpotifyPlaying(play) {
+    spotifyPlaying = play;
+    localStorage.setItem("mourinha_music", play ? "playing" : "paused");
+    if (spotifyPlayBtn) {
+        spotifyPlayBtn.textContent = play ? "⏸" : "▶";
+        spotifyPlayBtn.style.paddingLeft = play ? "0" : "2px";
+    }
+    if (spotifyEq) {
+        if (play) spotifyEq.classList.remove("paused");
+        else       spotifyEq.classList.add("paused");
+    }
+    if (play) {
+        barInterval = setInterval(() => {
+            barProgress = Math.min(barProgress + 0.08, 100);
+            if (spotifyBarFill) spotifyBarFill.style.width = barProgress + "%";
+            if (barProgress >= 100) {
+                barProgress = 0;
+                nextTrack();
+            }
+        }, 100);
+    } else {
+        clearInterval(barInterval);
+    }
+}
+
+function nextTrack() {
+    const trackEl = document.querySelector(".spotify-track");
+    if (!trackEl) return;
+    const current = trackEl.textContent;
+    const others = rhcpTracks.filter(t => t !== current);
+    trackEl.textContent = others[Math.floor(Math.random() * others.length)];
+    barProgress = 0;
+}
+
+if (spotifyPlayBtn) {
+    spotifyPlayBtn.addEventListener("click", () => {
+        if (spotifyPlaying) {
+            if (music) music.pause();
+            setSpotifyPlaying(false);
+        } else {
+            if (music) { music.volume = 0.3; music.play().catch(() => {}); }
+            setSpotifyPlaying(true);
+        }
+    });
+}
+
+const spotifyPrev = document.getElementById("spotifyPrev");
+const spotifyNext = document.getElementById("spotifyNext");
+
+if (spotifyPrev) {
+    spotifyPrev.addEventListener("click", () => {
+        barProgress = 0;
+        if (spotifyBarFill) spotifyBarFill.style.width = "0%";
+        const trackEl = document.querySelector(".spotify-track");
+        if (trackEl) {
+            const others = rhcpTracks.filter(t => t !== trackEl.textContent);
+            trackEl.textContent = others[Math.floor(Math.random() * others.length)];
+        }
+    });
+}
+
+if (spotifyNext) {
+    spotifyNext.addEventListener("click", () => {
+        barProgress = 0;
+        nextTrack();
+    });
+}
+
+if (spotifyBarFill) spotifyBarFill.style.width = barProgress + "%";
+
 if (music) {
     music.volume = 0.3;
-
     const musicBtn = document.createElement("button");
     musicBtn.textContent = "♪";
     musicBtn.classList.add("music-btn");
     document.body.appendChild(musicBtn);
-
-    let playing = false;
     musicBtn.addEventListener("click", () => {
-        if (playing) {
+        if (spotifyPlaying) {
             music.pause();
+            setSpotifyPlaying(false);
             musicBtn.textContent = "♪";
         } else {
-            music.play();
+            music.play().catch(() => {});
+            setSpotifyPlaying(true);
             musicBtn.textContent = "♬";
         }
-        playing = !playing;
     });
+
+    
+    if (localStorage.getItem("mourinha_music") === "playing") {
+        music.play().catch(() => {});
+        setSpotifyPlaying(true);
+        musicBtn.textContent = "♬";
+    }
 }
 
 const themeToggle = document.getElementById("themeToggle");
-let lightMode = false;
+let lightMode = localStorage.getItem("mourinha_theme") === "light";
+
+document.body.classList.toggle("light", lightMode);
+themeToggle.textContent = lightMode ? "☾" : "☀";
 
 themeToggle.addEventListener("click", () => {
     lightMode = !lightMode;
     document.body.classList.toggle("light", lightMode);
     themeToggle.textContent = lightMode ? "☾" : "☀";
+    localStorage.setItem("mourinha_theme", lightMode ? "light" : "dark");
 });
 
 if (window.innerWidth <= 768) {
