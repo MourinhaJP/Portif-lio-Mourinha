@@ -213,6 +213,8 @@ langToggle.addEventListener("click", () => {
 
 startTyping(currentLang);
 
+// hero profile photo removed
+
 const header = document.querySelector("header");
 let lastScroll = 0;
 
@@ -473,11 +475,13 @@ const themeToggle = document.getElementById("themeToggle");
 let lightMode = localStorage.getItem("mourinha_theme") === "light";
 
 document.body.classList.toggle("light", lightMode);
+document.documentElement.setAttribute("data-theme", lightMode ? "light" : "");
 themeToggle.textContent = lightMode ? "☾" : "☀";
 
 themeToggle.addEventListener("click", () => {
     lightMode = !lightMode;
     document.body.classList.toggle("light", lightMode);
+    document.documentElement.setAttribute("data-theme", lightMode ? "light" : "");
     themeToggle.textContent = lightMode ? "☾" : "☀";
     localStorage.setItem("mourinha_theme", lightMode ? "light" : "dark");
 });
